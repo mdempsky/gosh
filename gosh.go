@@ -105,10 +105,10 @@ Outer:
 				pos := pos + token.Pos(len(prefix))
 				switch cmd {
 				case "ok":
-					fmt.Printf("%s: ok\n", fset.Position(pos))
+					// fmt.Printf("%s: ok\n", fset.Position(pos))
 					allowed.setTop(true)
 				case "deny":
-					fmt.Printf("%s: deny\n", fset.Position(pos))
+					// fmt.Printf("%s: deny\n", fset.Position(pos))
 					allowed.setTop(false)
 				default:
 					log.Fatalf("%s: unknown command: %s\n", fset.Position(pos), cmd)
